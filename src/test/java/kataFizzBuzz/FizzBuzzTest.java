@@ -24,4 +24,18 @@ class FizzBuzzTest {
             //THEN
             assertEquals("Fizz", sut);
         }
+
+    @Test
+    void siNumEsMultiplo5devuelveFizz() {
+
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
+
+        //WHEN
+        var sut = fizzbuzz.execute(5);
+
+        //THEN
+        assertEquals("Buzz", sut);
+    }
+
     }
