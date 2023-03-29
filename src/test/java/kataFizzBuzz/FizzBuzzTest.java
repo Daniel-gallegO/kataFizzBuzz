@@ -53,6 +53,17 @@ class FizzBuzzTest {
     }
 
 
+    @Test
+    void siNumNoEsMultiplo3y5devuelveNumero() {
 
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
+
+        //WHEN
+        var sut = fizzbuzz.execute(13);
+
+        //THEN
+        assertEquals("13", sut);
+    }
 
     }

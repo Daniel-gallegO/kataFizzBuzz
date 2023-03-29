@@ -14,7 +14,7 @@ public class FizzBuzz {
             return "Fizz";}
         if (numero % 5 == 0) {return "Buzz";}
 
-        return "null";}
+        return String.valueOf(numero);}
 
 }
 
