@@ -13,20 +13,20 @@ class FizzBuzzTest {
     }
 
     @Test
-        void siNumEsMultiplo3devuelveFizz() {
+    void siNumEsMultiplo3devuelveFizz() {
 
-            //GIVEN
-            var fizzbuzz = new FizzBuzz();
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
 
-            //WHEN
-            var sut = fizzbuzz.execute(3);
+        //WHEN
+        var sut = fizzbuzz.execute(3);
 
-            //THEN
-            assertEquals("Fizz", sut);
-        }
+        //THEN
+        assertEquals("Fizz", sut);
+    }
 
     @Test
-    void siNumEsMultiplo5devuelveFizz() {
+    void siNumEsMultiplo5devuelveBuzz() {
 
         //GIVEN
         var fizzbuzz = new FizzBuzz();
@@ -37,5 +37,22 @@ class FizzBuzzTest {
         //THEN
         assertEquals("Buzz", sut);
     }
+
+
+    @Test
+    void siNumEsMultiplo3y5devuelveFizzBuzz() {
+
+        //GIVEN
+        var fizzbuzz = new FizzBuzz();
+
+        //WHEN
+        var sut = fizzbuzz.execute(15);
+
+        //THEN
+        assertEquals("FizzBuzz", sut);
+    }
+
+
+
 
     }
